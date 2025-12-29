@@ -4,12 +4,10 @@ function UseMemoExample() {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
 
-  // expensive calculation
   const doubleCount = useMemo(() => {
     console.log("Calculating doubleCount...");
     return count * 2;
-  }, [count]); // sirf count change hone par calculation chale
-
+  }, [count]); 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
       <h2>Count: {count}</h2>

@@ -7,9 +7,14 @@ import UseReducerExample from "./functionalcomponent/Use5_ReducerExample"
 import UseMemoExample from "./functionalcomponent/Use6_MemoExample"
 import UseCallbackExample from "./functionalcomponent/Use7_CallbackExample"
 import Parent_Prop from "./functionalcomponent/Parent_Prop"
-
 import SimpleForm from "./pages/SimpleForm"
 
+
+// classbase component imports
+import Class1_Hello from "./classcomponent/Class1_Hello"
+import Class2_State from "./classcomponent/Class2_State"
+import Class3_PropParent from "./classcomponent/Class3_PropParent"
+import Class4_Lifecycle from "./classcomponent/Class4_Lifecycle"
 const App = () => {
   return (
     <div className="bg-gray-600">
@@ -22,7 +27,16 @@ const App = () => {
       <UseCallbackExample />
       <CounterComponent />
       <Parent_Prop />
-      {/* <SimpleForm/> */}
+      <SimpleForm/>
+
+
+      {/* class base component  */}
+
+      <Class1_Hello />
+      <Class2_State />
+      <Class3_PropParent />
+      <Class4_Lifecycle />
+
     </div>
   )
 }

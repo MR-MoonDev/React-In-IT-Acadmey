@@ -12,10 +12,9 @@ function Child({ handleClick }) {
 function UseCallbackExample() {
   const [count, setCount] = useState(0);
 
-  // useCallback se function memoize ho raha hai
   const increment = useCallback(() => {
     setCount((c) => c + 1);
-  }, []); // dependencies empty → function sirf first render me create hoga
+  }, []); 
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen space-y-4">
