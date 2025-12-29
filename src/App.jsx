@@ -6,20 +6,22 @@ import UseRefExample from "./functionalcomponent/Use4_RefExample"
 import UseReducerExample from "./functionalcomponent/Use5_ReducerExample"
 import UseMemoExample from "./functionalcomponent/Use6_MemoExample"
 import UseCallbackExample from "./functionalcomponent/Use7_CallbackExample"
+import Parent_Prop from "./functionalcomponent/Parent_Prop"
 
 import SimpleForm from "./pages/SimpleForm"
 
 const App = () => {
   return (
     <div className="bg-gray-600">
-      <UseStateExample/>
+      <UseStateExample />
       <UseEffectExample />
       <UseContextExample />
       <UseRefExample />
       <UseReducerExample />
       <UseMemoExample />
-      <UseCallbackExample/>
-      <CounterComponent/>
+      <UseCallbackExample />
+      <CounterComponent />
+      <Parent_Prop />
       {/* <SimpleForm/> */}
     </div>
   )
