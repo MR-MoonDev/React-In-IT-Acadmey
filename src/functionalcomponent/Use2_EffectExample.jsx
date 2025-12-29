@@ -11,10 +11,10 @@ const UseEffectExample = () => {
     console.log("Data updated:",data+1)
   }
   
-  useEffect(() => {
-  const interval = setInterval(() => console.log("tick"), 1000);
-  return () => clearInterval(interval);
-}, []);
+//   useEffect(() => {
+//   const interval = setInterval(() => console.log("tick"), 1000);
+//   return () => clearInterval(interval);
+// }, []);
 
   return (
     <>
